@@ -4,113 +4,139 @@
 <head>
   <meta charset="utf-8">
   <title>Kurrun Behl | Official Portfolio</title>
-  <link rel="stylesheet" href="css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Corben:wght@700&family=Work+Sans:wght@200&display=swap" rel="stylesheet">
-  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/66ea77019f.js" crossorigin="anonymous"></script>
+  <!-- Scroll Animation Stylesheet -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
-  <nav class="home">
+  <nav id="nav" class="home">
 
-    <a href="index.html"><i class="fa-solid fa-house"></i></a>
+      <a class="nav-logo" href="index.html" id="navLogo">KB</a>
+      <a class="nav-link" href="#contact">Contact</a>
+      <a class="nav-link" href="#projects">Projects</a>
+      <a class="nav-link" href="index.html">Home</a>
 
   </nav>
 
   <div class="top-container">
-
-    <img class="top-cloud-one" src="images/clouds.png" alt="cloud-img">
-    <h1>Kurrun Behl</h1>
-    <p class="hero-text">Aspiring Front-End Developer</p>
-    <img class="bottom-cloud-one" src="images/clouds.png" alt="cloud-img">
-    <!-- <img class="monitor" src="images/web-development.png" alt="monitor-img"> -->
-
-    <img class="plane-three" src="https://media1.giphy.com/media/RlrmbPf91YOYds6nzW/giphy.gif?cid=ecf05e478byinfouyzrsgqz35h1hsoopidv8dy7vxhczteaf&rid=giphy.gif&ct=s" alt="plane-giphy-img">
-
+    <h1 class="hero-title">Hello, I'm Kurrun</h1>
+    <p class="hero-text">A Front-End Web Developer</p>
+    <a href="Kurrun Behl Official Resume.pdf" target="_blank"><button id="resumeBtn" class="projects-btn">Resume</button></a>
+    <div class="social-media">
+      <a href="https://www.linkedin.com/in/kurrun-behl-b28384203/" target="_blank"><i class="fa-brands fa-linkedin-in" id="linkedInIcon"></i></a>
+      <a href="https://github.com/KB23-Kurrun-Behl" target="_blank"><i class="fa-brands fa-github" id="gitHubIcon"></i></a>
+    </div>
+    <!-- <img class="hero-img" src="images/hero-img-1.png" id="heroImage"> -->
+    <!-- <button id="switch" class="switch-mode-btn" onclick="changeMode()"><img id="sun" src="images/sun.png"><img id="moon" src="images/moon.png"></button> -->
   </div>
+
+  <hr id="sectionBreak">
 
   <div class="middle-container">
-
-    <div class="profile">
-      <img class="profile-picture" src="images/man.png" alt="profile-picture">
-      <h2>Creativity</h2>
-      <p>Definition:<br>"The use of imagination or original ideas to produce artistic work" <br><br>
-        I have been creative for most of my life, beginning with art as a child <br>
-        and progressing to studying web-development. <br> I aim to
-        turn my passion into a career because I enjoy what I do everyday. <br><br>
-        Please don't hesitate to contact me regarding full-time job opportunities <br>
-        where I can contribute, learn and grow as an individual.
-      </p>
-      <br>
-      <a class="btn" href="resume.html">Resume</a>
-    </div>
-
-    <div class="projects">
-      <h2>Projects</h2>
-      <div class="project-row">
+    <section id="projects">
+      <h2 class="projects-title" data-aos="fade-up">Projects</h2>
+      <div class="project-row-1" data-aos="fade-down" id="projectBack">
         <img class="project-one-image" src="images/project-one-img.png" alt="">
-        <h3>Official Portfolio</h3>
-        <p>I aimed for simplicity and a colorful UI (User Interface) for my portfolio website. The project was developed purely with HTML & CSS.</p>
+        <h3 class="project-name">Official Portfolio</h3>
+        <p><i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-js"></i></p>
+        <p>This basic website showcases my programming projects, technical skills, and abilities.</p>
+        <!-- <button class="find-out-more-btn">Find Out More <i class="fa-solid fa-arrow-right"></i></button> -->
+        <br><br>
+          <a class="project-github" href="https://github.com/KB23-Kurrun-Behl/kurrun-behl-portfolio-html-css" target="_blank">Code</a>
+          <a class="project-github" href="https://kurrunbehl.web.app/" target="_blank">Demo</a>
+        <br>
       </div>
 
-      <div class="project-row">
+      <div class="project-row-2" data-aos="fade-down">
         <img class="project-two-image" src="images/project-two-img.png" alt="">
-        <h3>The Callisto Protocol</h3>
-        <p>A web-application based on the upcoming horror game "The Callisto Protocol". Created with the Bootstrap
-        framework and is currently in progress.</p>
+        <h3 class="project-name">The Math Game</h3>
+        <p><i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-js"></i></p>
+        <p>This project aims to help students put their mathematical skills to the test.</p>
+        <!-- <button class="find-out-more-btn">Find Out More <i class="fa-solid fa-arrow-right"></i></button> -->
+        <br><br>
+          <a class="project-github" href="https://github.com/KB23-Kurrun-Behl/the-math-game" target="_blank" id="codeLink">Code</a>
+          <a class="project-demo" href="https://themathgame.web.app/" target="_blank" id="demoLink">Demo</a>
+        <br>
       </div>
 
-    </div>
-
-    <div class="hobbies">
-      <h2>Hobbies</h2>
-      <div class="skill-one">
-        <div class="skill-img">
-          <a href="graphics.html"><img class="skill-one-image" src="images/hobby-one-img.png" alt=""></a>
-        </div>
-        <div class="skill-one-description">
-          <p>Graphic Design</p>
-        </div>
+      <div class="project-row-3" data-aos="fade-down">
+        <img class="project-three-image" src="images/project-three-img.png" alt="">
+        <h3 class="project-name">The Callisto Protocol</h3>
+        <p><i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-bootstrap"></i> <i class="fa-brands fa-js"></i> <i class="fa-brands fa-node"></i></p>
+        <p>This project displays my knowledge of front-end and back-end concepts.</p>
+        <!-- <button class="find-out-more-btn">Find Out More <i class="fa-solid fa-arrow-right"></i></button> -->
+        <br><br>
+          <a class="project-github" href="https://github.com/KB23-Kurrun-Behl/the-callisto-protocol-project/tree/main" target="_blank">Code</a>
+          <a class="project-demo" href="https://murmuring-island-23386.herokuapp.com/" target="_blank">Demo</a>
+        <br>
       </div>
 
-      <!-- <div class="skill-two">
-        <div class="skill-img">
-          <img class="skill-two-image" src="images/profilepicture.png" alt="">
-        </div>
-        <div class="skill-two-description">
-          <p>Video Editing</p>
-        </div>
-      </div> -->
+    </section>
 
+    <hr />
+
+    <div class="profile" data-aos="fade-up">
+      <img class="hero-img" src="images/hero-img-3.png" id="heroImage">
+      <h2 class="profile-title">Introduction</h2>
+      <p class="profile-overview">
+        A Computer Programming graduate from <br> Seneca College
+        with two years of web-development <br> and design experience, eager
+        to transition to a junior <br> front-end web developer role.
+      </p>
     </div>
 
-    <div class="contact-me">
-      <h2 class="contact-me-title">Get In Touch</h2>
-      <form class="contact-form" action="mailto:kurrunbehl@hotmail.com" method="post" enctype="text/plain">
-        <label>Your Name: </label>
-        <input class="inp-1" type="text" name="Name" value=""><br><br>
-        <label>Your Email: </label>
-        <input class="inp-2" type="email" name="Email" value=""><br><br>
-        <label>Your Message: </label><br><br>
+    <div class="skills-container" data-aos="fade">
+      <h3 class="skills-title">Skills</h3>
+      <p class="skill">HTML</p>
+      <p class="skill">CSS</p>
+      <p class="skill">JS</p>
+      <p class="skill">Node</p>
+      <p class="skill">Express</p>
+      <p class="skill">SQL</p>
+      <p class="skill">APIs</p>
+    </div>
+
+    <section id="contact">
+      <hr />
+      <h2 class="contact-title" data-aos="fade-up">Contact Me</h2>
+      <form class="contact-form" action="mailto:kurrunbehl@hotmail.com" method="post" enctype="text/plain" data-aos="fade">
+        <label>Name: </label>
+        <input class="inp-1" type="text" name="Name"><br><br>
+        <label>Email: </label>
+        <input class="inp-2" type="email" name="Email"><br><br>
+        <label>Message: </label><br><br>
         <textarea name="Message" rows="13" cols="40"></textarea><br><br>
-        <input class="btn" type="submit" name="" value="Submit">
+        <input class="submit-btn" type="submit" name="" value="Submit">
       </form>
-    </div>
-  </div>
+      <a href="https://www.linkedin.com/in/kurrun-behl-b28384203/" target="_blank"><button class="btn"><i class="fa-brands fa-linkedin"></i> Connect</button></a>
+      <a href="https://www.instagram.com/kurrunbehl/" target="_blank"><button class="btn"><i class="fa-brands fa-instagram"></i> Message</button></a>
+      <a href="mailto:kurrunbehl@hotmail.com" target="_blank"><button class="btn"><i class="fa-solid fa-envelope"></i> Email</button></a>
+    </section>
 
+  </div>
 
   <div class="bottom-container">
-
-    <a class="footer-link" href="https://www.linkedin.com/in/kurrun-behl-b28384203/">LinkedIn</a>
-    <a class="footer-link" href="https://twitter.com/therealkrrn">Twitter</a>
-    <a class="footer-link" href="https://www.instagram.com/theboykrrn/">Instagram</a>
-    <a class="footer-link" href="https://github.com/KB23-Kurrun-Behl">GitHub</a>
-    <p>© Developed By Kurrun Behl 2022</p>
-
+    <p class="copyright">© Developed By Kurrun Behl</p>
   </div>
+
+  <!-- Required JavaScript -->
+  <script src="main.js"></script>
+
+  <!-- Required Scroll Animation JavaScript -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 2000
+    });
+  </script>
 
 </body>
 
